@@ -21,6 +21,12 @@
 
     </link>
 
+    <joint name="body_joint" type="fixed">
+        <parent link="base_link" />
+        <child link="body" />
+        <origin xyz="-0.1 0 0">
+    </joint>
+
     <link name="body">
         <visual>
             <origin xyz="0.15 0 0.075" />
@@ -30,11 +36,5 @@
             <material name="black" />
         </visual>
     </link>
-
-    <joint name="body_joint" type="fixed">
-        <parent link="base_link" />
-        <child link="body" />
-        <origin xyz="-0.1 0 0">
-    </joint>
 
 </robot>
